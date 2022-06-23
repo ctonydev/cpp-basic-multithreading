@@ -13,6 +13,7 @@ void work(int delay = 0)
 
 int main()
 {
+    // Create some threads that do some work with a delay and wait for them to finish.
     std::thread t1(work, 500);
     std::thread t2(work, 500);
 
